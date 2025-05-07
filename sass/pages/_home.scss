@@ -1,0 +1,401 @@
+.hero-section {
+    display: flex;
+    justify-content: center;
+}
+.hero {
+    min-height: 100vh;
+    width: 90%;
+    background-color: $color-secondary;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; // Ensure children stretch full height
+    padding: 10rem 0 0 0;
+
+    &__content {
+        flex: 1; // Let content take available space
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 0 5rem;
+
+        h1 {
+            width: 100%;
+            flex: 1;
+            line-height: 5rem;
+        }
+
+        p {
+            width: 75%;
+            padding: 1rem 0;
+        }
+    }
+
+    &__image {
+        flex: 1;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // Ensures the image covers without distortion
+            display: block;
+        }
+    }
+}
+
+.courses-section {
+    display: flex;
+    justify-content: center;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: $color-primary;
+    margin-top: 7rem;
+    padding: 2.5rem;
+
+    &__title {
+        color: #fff;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        div {
+            padding: 2rem 7rem 2rem 2rem;
+            margin-top: 2.5rem;
+            display: flex;
+            align-items: center;
+
+            // ✅ Add the border to all divs except the last one
+            &:not(:last-child) {
+                border-right: 2px solid #fff;
+            }
+
+            i {
+                font-size: 8rem;
+                cursor: pointer;
+                color: #c3c3c3;
+            }
+        }
+    }
+}
+
+
+.why-section {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 10rem 0;
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &--img {
+        position: absolute;
+        top: 5rem;
+        left: -30rem;
+
+        img {
+            color: $color-secondary;
+            opacity: .8;
+        }
+    }
+}
+
+.why {
+
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1rem;
+        padding: 0 1rem 0 5rem;
+        z-index: 10;
+
+        &-1 {
+            grid-column: 2/3;
+            grid-row: 1/4;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: $shadow;
+                border-radius: 1.5rem;
+                cursor: pointer;
+            }
+        }
+
+        &-2 {
+            grid-column: 1/2;
+            grid-row: 2/6;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: $shadow;
+                border-radius: 1.5rem;
+                cursor: pointer;
+            }
+        }
+
+        &-3 {
+            grid-column: 2/3;
+            grid-row: 4/7;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: $shadow;
+                border-radius: 1.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__content {
+        padding: 0 2rem;
+        
+        &-head {
+
+            h2 {
+                font-size: 4rem;
+                line-height: 6rem;
+                text-transform: uppercase;
+
+                span {
+                    color: $color-primary
+                }
+            }
+
+            h3 {
+                display: flex;
+                align-items: center;
+                gap: 1rem; // spacing between line and text
+                color: $color-primary;
+                font-size: 2rem;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                span {
+                    display: inline-block;
+                    width: 5rem;
+                    height: .25rem;
+                    background-color: $color-primary; // use background, not color
+                }
+            }
+        }
+
+        &-grids {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 2rem 0 0 0;
+
+            &--items {
+                display: flex;
+                border: 1px solid $color-primary;
+                padding: 2rem;
+                border-radius: 2rem;
+
+                &-left {
+                    i {
+                        padding: 2rem .5rem 0 0;
+                        font-size: 5rem;
+                        color: $color-primary;
+                    }
+                }
+
+                &-right {
+   
+                    h4 {
+                        color: $color-primary;
+                        font-size: 5rem;
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.topcourses-section {
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary-light;
+    padding: 5rem 0;
+}
+
+.topcourses {
+    width: 90%;
+    min-height: 100vh;
+    height: 100%;
+
+    &__title {
+        padding: 2rem 0;
+
+        h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+
+            span {
+                color: $color-primary;
+            }
+        }
+        
+        h3 {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: $color-primary;
+            text-transform: uppercase;
+            font-size: 2rem;
+            cursor: pointer;
+
+            span {
+                width: 4rem;
+                height: .25rem;
+                background-color: $color-primary;
+            }
+        }
+        
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row; // allow horizontal layout
+        flex-wrap: wrap; // allow wrapping to new lines
+        gap: 2rem; // optional: adds spacing between cards
+    
+        &-item {
+            width: calc(50% - 1rem); // two per row, accounting for gap
+            background-color: #fff;
+            border: 2px solid $color-secondary;
+            border-radius: 2rem;
+            padding: 2rem 5rem;
+            box-shadow: $shadow;
+    
+            i {
+                font-size: 6rem;
+                color: $color-primary;
+                cursor: pointer;
+            }
+    
+            p {
+                font-size: 2.5rem;
+                font-weight: 700;
+                padding: 1rem 0;
+            }
+    
+            span {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+
+}
+
+
+.plans-section {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.plans {
+    width: 90%;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 3rem;
+            text-transform: uppercase;  
+            width: 75%;
+            text-align: center;
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $color-primary;
+            cursor: pointer;
+
+            span {
+                width: 5rem;
+                height: .25rem;
+                background-color: $color-primary
+            }
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            margin: 1rem 1rem !important;
+            padding: 1rem 1rem;
+            border-radius: 25rem;
+
+            &:last-child {
+                background-color: transparent;
+                border: none;
+                a {
+                color: $text-color;
+                }
+            }
+        }
+        
+
+        &-btn {
+            border: 2px solid $color-primary;
+            border-radius: 25rem;
+        }
+    }
+
+    &__cards-item {
+        width: 30%;
+        padding: 1rem;
+        border: 1px solid $text-color;
+
+        &--top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h4 {
+                font-size: 3rem;
+            }
+
+            span {
+                font-size: 4rem;
+                color: $color-primary;
+            }
+        }
+    }
+}

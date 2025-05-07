@@ -1,0 +1,49 @@
+.btn {
+    padding: .5rem 2rem;
+    margin-top: 2.5rem;
+    background-color: $color-primary;
+    color: #fff;
+    border: .5rem solid $color-primary;
+    cursor: pointer;
+
+    transition: all .5s;
+
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    
+    &:hover {
+        background-color: $color-secondary-dark;
+
+    }
+}
+
+.btn-light {
+    padding: .5rem 2rem;
+    margin-top: 2.5rem;
+    background-color: transparent;
+    color: $color-primary;
+    border: .5rem solid $color-primary;
+    cursor: pointer;
+
+    transition: all .5s;
+
+    a {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    
+    &:hover {
+        background-color: $color-secondary-dark;
+        color: $color-secondary;
+
+        a {
+            color: $color-secondary;
+        }
+    }
+}
