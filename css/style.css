@@ -1178,3 +1178,42 @@ p {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+
+.hero-template {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-image: url("/img/Hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  transform: translateY(8rem); }
+  .hero-template::before {
+    content: "";
+    background-color: rgba(255, 241, 224, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+
+.hero__links ul {
+  display: flex; }
+  .hero__links ul li {
+    list-style: none; }
+    .hero__links ul li a {
+      text-decoration: none;
+      font-size: 3rem;
+      color: #192A88;
+      font-weight: 900; }
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%; }

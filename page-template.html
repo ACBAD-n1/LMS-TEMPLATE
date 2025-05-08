@@ -53,8 +53,117 @@
         </nav>        
     </section>
 
+    <section class="hero-template"> 
+            <div class="hero__title">
+                <h1>Title</h1>
+            </div>
+            <div class="hero__links">
+                <ul>
+                    <li><a href="#">Home/</a></li> 
+                    <li><a href="#">Title-link</a></li>
+                </ul>
+            </div>
+    </section>
+
+    <section class="content-section">
+        
+    </section>
 
 
+    <section class="contact-section">
+        <div class="contact">
+            <div class="contact__content">
+                <img src="/img/admision-form-svgrepo-com.svg" alt="">
+                <div class="contact__content-head">
+                    <h3><span></span>How to start</h3>
+                    <h2>
+                        Join our free webinar: <br><span>Kickstart Your Learning Journey</span>
+                    </h2>
+                    <p>
+                        New to online learning? Join our Free Webinar where we’ll guide you through everything you 
+                        need to know about starting your journey with our platform. 
+                        Learn how to make the most out of your courses, track progress, and earn certifications.
+                    </p>
+                </div>
+                <div class="contact__content-bottom">
+                    <p>
+                        <i class="fa-solid fa-book-atlas"></i> We offer hands-on instructions.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-headset"></i> 100% placement assistance.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Tailor Made Courses.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-bars-progress"></i> Real Time Projects.
+                    </p>
+                </div>
+            </div>
+            <form class="contact__form">
+
+                <div class="contact__form-name">
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required />
+                    </div>
+    
+                    <div>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required />
+                    </div>
+                </div>
+    
+                <div class="contact__form-email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="contact__form-options">
+                    <label for="cursus">Choose Your Cursus:</label>
+                    <select id="cursus" name="cursus" required>
+                      <option value="">-- Select a course --</option>
+                      <option value="web-development">Web Development</option>
+                      <option value="data-science">Data Science</option>
+                      <option value="ui-ux">UI/UX Design</option>
+                      <option value="marketing">Digital Marketing</option>
+                    </select>
+                </div>
+
+                <button class="btn" type="submit">Submit</button>    
+            </form>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="footer">
+            <div class="footer__content">
+                <div class="footer__content-brand">
+                    <a href="#"><img src="/img/lms-logo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Data Security</a></li>
+                    <li><a href="#">Cookie Setting</a></li>
+                </ul>
+                <p>
+                    All right reserved to <a href="#">Adam Boureima</a>
+                </p>
+            </div>
+            <div class="footer__newsletter">
+                <h3>Newsletter</h3>
+                <p>
+                    By clicking SUBSCRIBE, you agree to our Privacy Policy
+                </p>
+                <form action="" class="footer__newsletter-form">
+                    <label for="newsletter-email" class="visually-hidden">Your Email</label>
+                    <input type="email" name="newsletter-email" id="newsletter-email" required />
+                    <input type="submit" value="SUBSCRIBE" class="btn" />
+                  </form>                  
+            </div>
+        </div>
+    </section>
 
     <script src="/js/script.js"></script>
 </body>
