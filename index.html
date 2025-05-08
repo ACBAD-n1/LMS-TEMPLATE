@@ -11,10 +11,32 @@
     <section class="navigation-section">
         <nav class="navigation">
             <div class="navigation__brand">
-                <img src="/img/lms-logo.png" alt="">
+                <a href="index.html"><img src="/img/lms-logo.png" alt="Logo"></a>
             </div>
+
             <div class="navigation__links">
+                <!-- Desktop Links -->
                 <div class="navigation__links-items">
+                    <ul>
+                        <li><a href="page-template.html">About</a></li>
+                        <li>Our Services</li>
+                        <li>Assignments</li>
+                        <li>Packages</li>
+                        <li>Contact</li>
+                        <li>Learning Tools</li>
+                    </ul>
+                </div>
+        
+                <!-- Mobile Toggle Button -->
+                <button class="mobile__menu-toggle" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+        
+                <!-- Mobile Menu -->
+                <div class="mobile__menu" hidden>
+                    <button class="mobile__menu-close" aria-label="Close menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                     <ul>
                         <li>About</li>
                         <li>Our Services</li>
@@ -23,12 +45,12 @@
                         <li>Contact</li>
                         <li>Learning Tools</li>
                     </ul>
-                </div>
-                <div class="navigation__links-profile">
-                    <i></i><p>Log In</p>
+                    <div class="mobile__links-profile">
+                        <i></i><p>Log In</p>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </nav>        
     </section>
 
     <section class="hero-section">
@@ -898,6 +920,8 @@
             </div>
         </div>
     </section>
-    
+
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
